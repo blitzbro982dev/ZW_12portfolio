@@ -1,84 +1,51 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #111;
-  color: #fff;
-  font-family: sans-serif;
-}
-
-nav {
+.work-section {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background: transparent;
-  position: sticky;
-  top: 0;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
 }
 
-.nav-left {
-  font-weight: bold;
-  font-size: 1.2rem;
+.category {
+  flex: 1 1 400px;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
-.nav-right a {
-  margin-left: 1.2rem;
-  text-decoration: none;
-  color: #aaa;
-  transition: color 0.2s ease;
+.category h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
 }
 
-.nav-right a:hover {
-  color: white;
-}
-
-.nav-right .active {
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-.page-title {
-  text-align: right;
-  padding: 0 2rem;
-  font-style: italic;
-  color: gray;
-}
-
-main {
-  padding: 2rem;
-}
-
-.intro p {
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-form {
+.work-column {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: auto;
+  gap: 30px;
+  align-items: center;
 }
 
-input, textarea {
-  background: #222;
-  border: 1px solid #555;
-  color: white;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
+.work-card {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 0 5px #333;
 }
 
-button {
-  padding: 0.8rem;
-  background: #333;
-  border: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.work-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 10px 0;
 }
 
-button:hover {
-  background: #555;
+.work-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ddd;
+  text-decoration: underline;
 }
