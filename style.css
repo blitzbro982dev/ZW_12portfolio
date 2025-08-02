@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: transparent;
+  position: sticky;
+  top: 0;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-right a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: #aaa;
+  transition: color 0.2s ease;
+}
+
+.nav-right a:hover {
+  color: white;
+}
+
+.nav-right .active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.page-title {
+  text-align: right;
+  padding: 0 2rem;
+  font-style: italic;
+  color: gray;
+}
+
+main {
+  padding: 2rem;
+}
+
+.intro p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  background: #222;
+  border: 1px solid #555;
+  color: white;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.8rem;
+  background: #333;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #555;
+}
